@@ -33,6 +33,8 @@ function inputsValidation() {
     inputAlertFadeIn("Title input", "most contain at least 3 characters");
   } else if (authorInput.value.trim().length < 3) {
     inputAlertFadeIn("Author input", "most contain at least 3 characters");
+  } else if (yearInput.value.trim().length < 2){
+    inputAlertFadeIn("Year input", "most contain at least 2 characters");
   } else if (isNaN(+yearInput.value)) {
     inputAlertFadeIn("Year input", "should only contain numbers");
   } else {
